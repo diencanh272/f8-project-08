@@ -9,9 +9,11 @@ html {
 }
 
 body {
+    scroll-behavior: smooth;
     font-size: 1.6rem;
     font-family: Gordita, sans-serif;
     color: var(--text-color);
+    background: var(--body-bg-color);
 }
 
 a {
