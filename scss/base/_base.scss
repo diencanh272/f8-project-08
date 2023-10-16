@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 *,
 ::after,
 ::before {
@@ -21,10 +23,22 @@ a {
     text-decoration: none;
 }
 
+input,
+select,
 button {
     border: none;
     outline: none;
     background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+}
+
+select {
+    cursor: default;
 }
 
 a,
@@ -40,4 +54,11 @@ select {
 
 .icon {
     filter: var(--icon-color);
+}
+
+.container {
+    @include abstracts.screen(sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 }

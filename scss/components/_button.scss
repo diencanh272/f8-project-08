@@ -1,0 +1,101 @@
+// Filter button
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+
+    padding: 6px 14px;
+    border-radius: 6px;
+    background: var(--filter-btn-bg);
+
+    color: var(--filter-btn-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.43;
+}
+
+.filter-result {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.filter-cancel {
+    font-size: 1.5rem;
+    line-height: 146.667%;
+}
+
+.filter-show {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 142.857%;
+    padding: 9px 10px;
+}
+
+.like-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 20px 60px var(--like-btn-shadow);
+
+    &:not(&--liked) &__icon--liked {
+        display: none;
+    }
+
+    &.like-btn--liked &__icon {
+        display: none;
+    }
+    &__icon--liked {
+        margin-top: 8px;
+    }
+}
+
+.btn {
+    height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+    user-select: none;
+
+    background: #f8f8fb;
+
+    font-size: 1.8erm;
+    font-weight: 500;
+
+    + .btn {
+        margin-left: 20px;
+    }
+
+    &-text {
+        background: transparent;
+        color: var(--form-tag-text-color);
+        font-weight: 400;
+    }
+
+    &-primary {
+        background: var(--btn-primary-color);
+    }
+
+    &-outline {
+        background: transparent;
+        border: 1px solid var(--btn-outline-color);
+    }
+
+    &-rounded {
+        border-radius: 99px;
+    }
+
+    &[disable],
+    &-disable {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

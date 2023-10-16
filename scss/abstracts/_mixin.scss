@@ -6,7 +6,7 @@ $grid-breakpoints: (
     xxl: 1400px,
 );
 
-@mixin breakpoint($key) {
+@mixin screen($key) {
     $breakpoint: map-get(
         $map: $grid-breakpoints,
         $key: $key,
@@ -17,6 +17,6 @@ $grid-breakpoints: (
             @content;
         }
     } @else {
-        @error "The value #{$key} is not in breakpoint list ";
+        @error "The value #{$key} is not in screen list ";
     }
 }
