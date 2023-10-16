@@ -1,5 +1,7 @@
 // Filter button
 
+@use "../abstracts";
+
 .filter-btn {
     display: flex;
     align-items: center;
@@ -19,6 +21,13 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 18px;
+
+    @include abstracts.screen(xl) {
+        padding-bottom: 16px;
+    }
+    @include abstracts.screen(sm) {
+        padding-bottom: 0;
+    }
 }
 
 .filter-cancel {

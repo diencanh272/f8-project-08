@@ -48,4 +48,6 @@ html.dark {
     --slider-border-color: #d2d1d6;
     --form-tag-text-color: #9e9da8;
     --form-tag-bg-color: #171c28;
+    --filter-form-arrow: brightness(0) saturate(100%) invert(18%) sepia(7%) saturate(1107%) hue-rotate(166deg)
+        brightness(96%) contrast(97%);
 }
