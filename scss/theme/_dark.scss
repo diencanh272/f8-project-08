@@ -9,6 +9,9 @@ html.dark {
 
     --body-bg-color: #292e39;
 
+    --footer-bg-color: var(--header-bg-color);
+    --footer-text-color: #9e9da6;
+
     --top-act-group-bg-color: #292e39;
     --top-act-group-shadow: rgba(0, 0, 0, 0.2);
     --top-act-separate-bg-color: #ededf6;
@@ -50,4 +53,13 @@ html.dark {
     --form-tag-bg-color: #171c28;
     --filter-form-arrow: brightness(0) saturate(100%) invert(18%) sepia(7%) saturate(1107%) hue-rotate(166deg)
         brightness(96%) contrast(97%);
+
+    // Auth
+    --auth-content-bg: #292e39;
+    --auth-intro-bg: #171c28;
+    --auth-intro-text-color: #b9babe;
+    --auth-heading-color: #b9babe;
+
+    // Forms
+    --form-placeholder-color: #b9babe;
 }

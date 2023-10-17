@@ -186,6 +186,14 @@
         }
     }
 
+    &__sign-up {
+        @include abstracts.screen(md) {
+            height: 40px !important;
+            padding: 0 8px !important;
+            font-size: 1.5rem !important;
+        }
+    }
+
     &__group--single {
         @include abstracts.screen(lg) {
             display: none;

@@ -21,8 +21,12 @@
     }
 
     @include abstracts.screen(sm) {
-        width: 85vw;
+        width: 100vw;
         padding: 20px;
+        height: 100vh;
+        position: fixed;
+        inset: 0;
+        border-radius: 0;
     }
 
     &.hide {
@@ -70,7 +74,7 @@
 
     @include abstracts.screen(xl) {
         overflow-y: auto;
-        max-height: calc(100vh - 130px);
+        max-height: calc(100vh - 102px);
         overscroll-behavior: contain;
     }
 
@@ -214,6 +218,10 @@
             &::placeholder {
                 color: var(--form-tag-text-color);
                 font-weight: 400;
+            }
+
+            @include abstracts.screen(sm) {
+                font-size: 1.6rem;
             }
         }
 

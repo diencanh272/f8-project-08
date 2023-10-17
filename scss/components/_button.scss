@@ -21,12 +21,17 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 18px;
+    position: sticky;
+    bottom: 0;
+    background: var(--filter-form-bg);
 
     @include abstracts.screen(xl) {
         padding-bottom: 16px;
     }
     @include abstracts.screen(sm) {
         padding-bottom: 0;
+        position: sticky;
+        bottom: 0;
     }
 }
 
@@ -72,11 +77,18 @@
 
     background: #f8f8fb;
 
-    font-size: 1.8erm;
+    font-size: 1.8rem;
     font-weight: 500;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     + .btn {
-        margin-left: 20px;
+        &:not(.btn--no-margin) {
+            margin-left: 20px;
+        }
     }
 
     &-text {

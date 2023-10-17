@@ -10,6 +10,8 @@ html {
 
     --body-bg-color: #f6f6f6;
 
+    --footer-bg-color: var(--header-bg-color);
+
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-separate-bg-color: #ededf6;
@@ -57,4 +59,14 @@ html {
     // Btn
     --btn-primary-color: #ffb700;
     --btn-outline-color: #d2d1d6;
+
+    // Auth
+    --auth-content-bg: #fff;
+
+    @include abstracts.screen(md) {
+        --auth-intro-bg: #fff;
+    }
+
+    // Forms
+    --form-placeholder-color: #d2d1d6;
 }
