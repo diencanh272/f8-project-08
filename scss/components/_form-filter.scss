@@ -9,8 +9,8 @@
     position: absolute;
     right: 0;
     top: 55px;
-    background: var(--filter-form-bg);
-    box-shadow: var(--filter-form-shadow);
+    background: var(--form-bg);
+    box-shadow: var(--form-shadow);
     border-radius: 20px;
     padding: 30px;
     transition: opacity, visibility;
@@ -78,19 +78,6 @@
         overscroll-behavior: contain;
     }
 
-    &-label {
-        display: block;
-        font-size: 2.2rem;
-        font-weight: 500;
-        line-height: 145.455%;
-
-        &--small {
-            margin-bottom: 10px;
-            font-size: 1.4rem;
-            line-height: 142.875%;
-        }
-    }
-
     &-input {
         padding: 8px 12px;
         border-radius: 6px;
@@ -144,59 +131,6 @@
         }
     }
 
-    &-select {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 1.4rem;
-
-        height: calc(100% - 10px);
-        min-width: var(--width, 108px);
-
-        font-weight: 500;
-        line-height: 142.857%;
-        padding: 0 14px;
-
-        @include abstracts.screen(xl) {
-            flex: 1;
-        }
-    }
-
-    &-select + &-select {
-        border-left: 1px solid var(--slider-border-color);
-    }
-
-    &-select--wrap {
-        display: flex;
-        align-items: center;
-        height: 45px;
-        border-radius: 6px;
-        border: 1px solid var(--slider-border-color);
-    }
-
-    &-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px 20px;
-
-        @include abstracts.screen(sm) {
-            gap: 10px 10px;
-        }
-    }
-
-    &-tag {
-        padding: 6px 12px;
-        border-radius: 6px;
-        color: var(--form-tag-text-color);
-        background: var(--form-tag-bg-color);
-
-        transition: color 0.2s;
-
-        &:hover {
-            color: var(--text-color);
-        }
-    }
-
     &-search {
         display: flex;
         width: 335px;
@@ -231,4 +165,37 @@
             margin-left: 12px;
         }
     }
+}
+
+.filter-result {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+    position: relative;
+
+    background: var(--form-bg);
+
+    @include abstracts.screen(xl) {
+        position: sticky;
+        bottom: 0;
+        padding-bottom: 16px;
+    }
+    @include abstracts.screen(sm) {
+        padding-bottom: 0;
+        position: sticky;
+        bottom: 0;
+    }
+}
+
+.filter-cancel {
+    font-size: 1.5rem;
+    line-height: 146.667%;
+}
+
+.filter-show {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 142.857%;
+    padding: 9px 10px;
 }

@@ -23,7 +23,7 @@
     margin-top: 18px;
     position: sticky;
     bottom: 0;
-    background: var(--filter-form-bg);
+    background: var(--form-bg);
 
     @include abstracts.screen(xl) {
         padding-bottom: 16px;

@@ -11,3 +11,5 @@
 5. https://validator.w3.org/ => kiểm tra sematic
 
 6. tách biến đối với position abs để lập trình sinh ra biến và thay đổi giá trị thay biến
+
+7. chú ý phân tích bản thiết kế những thành phần thuộc form, buttons để tái sử dụng

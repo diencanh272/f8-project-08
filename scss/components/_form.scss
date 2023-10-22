@@ -3,6 +3,72 @@
 $error-color: #ed4337;
 
 .form {
+    &__label {
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+
+        &--small {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            line-height: 142.875%;
+        }
+    }
+
+    &__select {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.4rem;
+
+        height: calc(100% - 10px);
+        min-width: var(--width, 108px);
+
+        font-weight: 500;
+        line-height: 142.857%;
+        padding: 0 14px;
+
+        @include abstracts.screen(xl) {
+            flex: 1;
+        }
+    }
+
+    &__select + &__select {
+        border-left: 1px solid var(--slider-border-color);
+    }
+
+    &__select--wrap {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        border-radius: 6px;
+        border: 1px solid var(--slider-border-color);
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+
+        @include abstracts.screen(sm) {
+            gap: 10px 10px;
+        }
+    }
+
+    &__tag {
+        padding: 6px 12px;
+        border-radius: 6px;
+        color: var(--form-tag-text-color);
+        background: var(--form-tag-bg-color);
+
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+
     &:has(:invalid) &__submit-btn {
         opacity: 0.5;
         pointer-events: none;
