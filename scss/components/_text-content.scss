@@ -1,0 +1,71 @@
+.text-content {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.6rem;
+    }
+
+    h6 {
+        font-size: 1.4rem;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    img {
+        margin: 20px 0;
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        margin: 40px 0;
+        background: var(--text-content-hr-color);
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img + em {
+        display: block;
+        font-style: italic;
+        text-align: center;
+    }
+
+    blockquote {
+        padding-left: 30px;
+        border-left: 3px solid var(--text-content-quote-border-color);
+        background: var(--text-content-quote-bg);
+        padding: 20px;
+        border-radius: 10px;
+    }
+}

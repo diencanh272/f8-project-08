@@ -1,7 +1,13 @@
+@use "../abstracts";
+
 .review-card {
     padding: 30px;
     border-radius: 16px;
     background: var(--review-card-bg);
+
+    @include abstracts.screen(lg) {
+        padding: 20px;
+    }
 
     &__content {
         display: flex;

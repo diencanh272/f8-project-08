@@ -48,6 +48,7 @@
 
         font-size: 1.5rem;
         line-height: 1.47;
+        margin-top: auto;
     }
 
     &__value {
@@ -59,5 +60,14 @@
     &__rating {
         display: flex;
         gap: 6px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__star {
+        margin-left: auto;
     }
 }

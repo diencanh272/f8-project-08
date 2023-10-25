@@ -224,6 +224,11 @@
         display: flex;
         align-items: center;
         margin: 0 -30px;
+
+        @include abstracts.screen(md) {
+            flex-wrap: wrap;
+            margin: 0;
+        }
     }
 
     &__item {
@@ -232,6 +237,10 @@
         font-size: 2.2rem;
         font-weight: 500;
         line-height: 145.455%;
+
+        @include abstracts.screen(md) {
+            padding: 10px 16px 10px 0;
+        }
 
         &--current {
             color: inherit;
@@ -253,9 +262,13 @@
 
 .prod-content {
     &__heading {
-        margin-bottom: 30px;
+        margin: 30px 0;
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 141.667%;
+
+        @include abstracts.screen(md) {
+            margin: 20px 0;
+        }
     }
 }

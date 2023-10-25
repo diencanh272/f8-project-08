@@ -1,0 +1,7 @@
+@use "../abstracts";
+
+.banners {
+    @include abstracts.screen(md) {
+        flex-direction: column-reverse;
+    }
+}
