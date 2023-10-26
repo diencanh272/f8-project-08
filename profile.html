@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocery Mart</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <!-- MAIN -->
+
+        <main class="profile-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="profile-manage">
+                            <div class="profile-avatar">
+                                <img class="profile-thumbs" src="./assets/avatar/bg-profile.png" alt="" />
+                            </div>
+
+                            <div class="profile-account">
+                                <div class="profile-account__item-wrap">
+                                    <h3 class="profile-account__heading">Manage Account</h3>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/personal.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title">Personal info</span>
+                                    </div>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/location.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title">Addresses</span>
+                                    </div>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/message.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title"> Communications & privacy</span>
+                                    </div>
+                                </div>
+
+                                <div class="profile-account__item-wrap">
+                                    <h3 class="profile-account__heading">My Items</h3>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/download.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title"> Reorder </span>
+                                    </div>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/heart.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title">Lists</span>
+                                    </div>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/gift.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title">Registries</span>
+                                    </div>
+                                </div>
+                                <div class="profile-account__item-wrap">
+                                    <h3 class="profile-account__heading">Subscriptions & plans</h3>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/shield.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title">Protection plans</span>
+                                    </div>
+                                </div>
+                                <div class="profile-account__item-wrap">
+                                    <h3 class="profile-account__heading">Customer Service</h3>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/help.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title">Help</span>
+                                    </div>
+                                    <div class="profile-account__select">
+                                        <img
+                                            src="./assets/icons/account/term.svg"
+                                            alt=""
+                                            class="profile-account__icon icon"
+                                        />
+                                        <span class="profile-account__title">Terms of Use</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="profile-detail">
+                            <div class="profile-detail__item-wrap">
+                                <div class="profile-detail__title">
+                                    <h2 class="profile-detail__heading">My Wallet</h2>
+                                    <p class="profile-detail__desc">Payment Methods</p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img
+                                            src="./assets/icons/account/blue-card.png"
+                                            alt=""
+                                            class="profile-detail__payment-card"
+                                        />
+                                    </div>
+                                    <div class="col-4">
+                                        <img
+                                            src="./assets/icons/account/green-card.png"
+                                            alt=""
+                                            class="profile-detail__payment-card"
+                                        />
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="add-card-payment profile-detail__payment-card">
+                                            <img class="add-card-payment-icon" src="./assets/icons/pluss.svg" alt="" />
+                                            <span class="add-new-card">Add New Card</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-detail__item-wrap">
+                                <div class="profile-detail__title">
+                                    <h2 class="profile-detail__heading">Account info</h2>
+                                    <p class="profile-detail__desc">Addresses, contact information and password</p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="profile-detail__info">
+                                            <div class="profile-detail__info-wrap">
+                                                <img
+                                                    src="./assets/icons/message.svg"
+                                                    alt=""
+                                                    class="profile-detail__info-icon"
+                                                />
+
+                                                <div class="profile-detail__info-account">
+                                                    <h3 class="profile-detail__info-title">Email Address</h3>
+                                                    <p class="profile-detail__info-desc">tarek97.ta@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="profile-detail__info">
+                                            <div class="profile-detail__info-wrap">
+                                                <img
+                                                    src="./assets/icons/account/phone.svg"
+                                                    alt=""
+                                                    class="profile-detail__info-icon"
+                                                />
+
+                                                <div class="profile-detail__info-account">
+                                                    <h3 class="profile-detail__info-title">Phone number</h3>
+                                                    <p class="profile-detail__info-desc">+000 11122 2345 657</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="profile-detail__info">
+                                            <div class="profile-detail__info-wrap">
+                                                <img
+                                                    src="./assets/icons/account/location.svg"
+                                                    alt=""
+                                                    class="profile-detail__info-icon"
+                                                />
+
+                                                <div class="profile-detail__info-account">
+                                                    <h3 class="profile-detail__info-title">Add an address</h3>
+                                                    <p class="profile-detail__info-desc">
+                                                        Bangladesh Embassy, Washington, DC 20008
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-detail__item-wrap">
+                                <div class="profile-detail__title">
+                                    <h2 class="profile-detail__heading">Lists</h2>
+                                    <p class="profile-detail__desc">2 items - Primary</p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img
+                                            src="./assets/img/products/item-5.png"
+                                            alt=""
+                                            class="profile-detail__thumbs"
+                                        />
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="profile-detail__prod-list">
+                                            <h3 class="profile-detail__prod-name">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </h3>
+
+                                            <div class="profile-detail__prod-cta">
+                                                <span class="profile-detail__prod-price">$47.00</span>
+
+                                                <button class="btn btn-primary profile-detail__prod-btn">
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="separate"></div>
+
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img
+                                            src="./assets/img/products/item-8.png"
+                                            alt=""
+                                            class="profile-detail__thumbs"
+                                        />
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="profile-detail__prod-list">
+                                            <h3 class="profile-detail__prod-name">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </h3>
+
+                                            <div class="profile-detail__prod-cta">
+                                                <span class="profile-detail__prod-price">$53.00</span>
+
+                                                <button class="btn btn-primary profile-detail__prod-btn">
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

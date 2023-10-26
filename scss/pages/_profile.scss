@@ -1,0 +1,152 @@
+@use "../abstracts";
+
+.df-dir-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile {
+    &-page {
+        margin-top: 30px;
+    }
+
+    &-manage {
+        border-radius: 20px 20px 0 0;
+        background: #fff;
+    }
+
+    &-detail {
+        @extend .df-dir-col;
+
+        background: #fff;
+        padding: 30px;
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__heading {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 141.667%;
+        }
+
+        &__desc {
+            font-size: 1.5rem;
+            line-height: 146.667%;
+        }
+
+        &__payment-card {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        &__info {
+            padding: 10px;
+            border-radius: 10px;
+            background: var(--Background-2, #f6f6f6);
+
+            &-wrap {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            &-icon {
+                padding: 15px;
+                border-radius: 8px;
+                background: var(--secondary-color-background, #fff);
+            }
+
+            &-title {
+                margin-bottom: 6px;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 146.667%;
+            }
+
+            &-desc {
+                font-size: 1.4rem;
+                line-height: 142.857%;
+            }
+        }
+
+        &__thumbs {
+            width: 100%;
+        }
+
+        &__prod {
+            &-name {
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 146.667%;
+            }
+
+            &-cta {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                margin-top: 10px;
+            }
+
+            &-price {
+                font-size: 2.2rem;
+                font-weight: 500;
+                line-height: 145.455%;
+            }
+
+            &-btn {
+                padding: 10px 20px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    &-avatar {
+    }
+
+    &-thumbs {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 20px 20px 0px 0px;
+        background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%);
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    }
+
+    &-account {
+        padding: 30px 0 30px 30px;
+        @extend .df-dir-col;
+
+        &__item-wrap {
+            @extend .df-dir-col;
+
+            gap: 10px;
+        }
+
+        &__heading {
+            margin-bottom: 16px;
+
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+
+        &__select {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            line-height: 146.667%;
+        }
+    }
+}

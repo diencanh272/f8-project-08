@@ -200,6 +200,13 @@ select {
   overflow: hidden;
 }
 
+.separate {
+  height: 1px;
+  width: 100%;
+  background: #d2d1d6;
+  margin: 20px 0;
+}
+
 .row > *, .container-fluid, .container {
   padding-left: calc(var(--grid-gutter-x) * 0.5);
   padding-right: calc(var(--grid-gutter-x) * 0.5);
@@ -2785,6 +2792,39 @@ select {
   }
 }
 
+.cart-wrap {
+  position: relative;
+}
+
+.cart-total {
+  position: absolute;
+  width: 585px;
+  height: 674px;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+}
+
+.add-card-payment {
+  border: 1px dashed #d2d1d6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.add-card-payment-icon {
+  width: 24px;
+  margin-bottom: 14px;
+}
+
+.add-new-card {
+  color: var(--secondary-color-secondary-3, #d2d1d6);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+
 html.dark {
   --text-color: #ffffff;
   --icon-color: invert(100%) sepia(6%) saturate(6325%) hue-rotate(161deg) brightness(117%) contrast(105%);
@@ -3378,6 +3418,120 @@ html {
   .prod-content__heading {
     margin: 20px 0;
   }
+}
+
+.df-dir-col, .profile-account__item-wrap, .profile-account, .profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-page {
+  margin-top: 30px;
+}
+.profile-manage {
+  border-radius: 20px 20px 0 0;
+  background: #fff;
+}
+.profile-detail {
+  background: #fff;
+  padding: 30px;
+}
+.profile-detail__title {
+  margin-bottom: 16px;
+}
+.profile-detail__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141.667%;
+}
+.profile-detail__desc {
+  font-size: 1.5rem;
+  line-height: 146.667%;
+}
+.profile-detail__payment-card {
+  width: 100%;
+  border-radius: 10px;
+}
+.profile-detail__info {
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--Background-2, #f6f6f6);
+}
+.profile-detail__info-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-detail__info-icon {
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--secondary-color-background, #fff);
+}
+.profile-detail__info-title {
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 146.667%;
+}
+.profile-detail__info-desc {
+  font-size: 1.4rem;
+  line-height: 142.857%;
+}
+.profile-detail__thumbs {
+  width: 100%;
+}
+.profile-detail__prod-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 146.667%;
+}
+.profile-detail__prod-cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.profile-detail__prod-price {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 145.455%;
+}
+.profile-detail__prod-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.profile-thumbs {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%);
+  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+}
+.profile-account {
+  padding: 30px 0 30px 30px;
+}
+.profile-account__item-wrap {
+  gap: 10px;
+}
+.profile-account__heading {
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+}
+.profile-account__select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-account__icon {
+  width: 24px;
+  height: 24px;
+}
+.profile-account__title {
+  font-size: 1.5rem;
+  line-height: 146.667%;
 }
 
 /*# sourceMappingURL=main.css.map */
