@@ -74,6 +74,7 @@
     padding: 0 20px;
     border-radius: 6px;
     user-select: none;
+    white-space: nowrap;
 
     background: #f8f8fb;
 
@@ -85,6 +86,10 @@
     justify-content: center;
     gap: 10px;
 
+    &__small {
+        height: 40px;
+    }
+
     + .btn {
         &:not(.btn--no-margin) {
             margin-left: 20px;
@@ -93,7 +98,6 @@
 
     &-text {
         background: transparent;
-        color: var(--form-tag-text-color);
         font-weight: 400;
     }
 
